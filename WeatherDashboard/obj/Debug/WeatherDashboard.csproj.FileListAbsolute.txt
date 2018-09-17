@@ -1,0 +1,202 @@
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\obj\Debug\WeatherDashboard.csprojResolveAssemblyReference.cache
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\ApplicationInsights.config
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\csc.exe
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\System.Collections.Immutable.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\vbc.exe
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\VBCSCompiler.exe
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\roslyn\VBCSCompiler.exe.config
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\WeatherDashboard.dll.config
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\WeatherDashboard.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\WeatherDashboard.pdb
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Antlr3.Runtime.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\EntityFramework.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\EntityFramework.SqlServer.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.Web.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.WindowsServer.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.ApplicationInsights.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Google.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Web.Infrastructure.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Newtonsoft.Json.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Owin.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Helpers.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Mvc.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Optimization.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Razor.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Deployment.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Razor.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\WebGrease.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.Web.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.WindowsServer.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.ApplicationInsights.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Helpers.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Mvc.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Optimization.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.Razor.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Deployment.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Razor.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Antlr3.Runtime.pdb
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Newtonsoft.Json.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\EntityFramework.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\EntityFramework.SqlServer.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Google.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Helpers.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Mvc.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Optimization.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Razor.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\System.Web.WebPages.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\EntityFramework.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\obj\Debug\WeatherDashboard.dll
+c:\users\erick\OneDrive\Documentos\Visual Studio 2015\Projects\WeatherDashboard\WeatherDashboard\obj\Debug\WeatherDashboard.pdb
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\ApplicationInsights.config
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\csc.exe
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\System.Collections.Immutable.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\System.Reflection.Metadata.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\vbc.exe
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\VBCSCompiler.exe
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\roslyn\VBCSCompiler.exe.config
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\WeatherDashboard.dll.config
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\WeatherDashboard.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\WeatherDashboard.pdb
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Antlr3.Runtime.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\EntityFramework.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\EntityFramework.SqlServer.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.DependencyCollector.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.Web.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.WindowsServer.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.ApplicationInsights.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Google.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Web.Infrastructure.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Newtonsoft.Json.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Owin.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Helpers.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Mvc.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Optimization.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Razor.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Deployment.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Razor.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\WebGrease.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.DependencyCollector.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.Web.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AI.WindowsServer.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.ApplicationInsights.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Helpers.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Mvc.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Optimization.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.Razor.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Deployment.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\System.Web.WebPages.Razor.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Antlr3.Runtime.pdb
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Newtonsoft.Json.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\EntityFramework.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\EntityFramework.SqlServer.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Google.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Helpers.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Mvc.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Optimization.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\System.Web.Razor.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\System.Web.WebPages.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\EntityFramework.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\EntityFramework.SqlServer.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.Google.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\obj\Debug\WeatherDashboard.csprojResolveAssemblyReference.cache
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\obj\Debug\WeatherDashboard.dll
+D:\Escritorio\Proyectos\Pinnacle\WeatherDashboard\WeatherDashboard\obj\Debug\WeatherDashboard.pdb
