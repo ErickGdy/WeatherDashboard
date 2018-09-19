@@ -13,12 +13,6 @@ namespace WeatherDashboard.Controllers
         public ActionResult Index()
         {
             ViewData["States"] = "Sonora";
-            //List<SelectListItem> Cities = new List<SelectListItem>();
-            //var Ciudades = StatesCitiesModel.GetCiudades("Sonora");
-            //for (int i = 0; i < Ciudades.Length; i++)
-            //{
-            //    Cities.Add(new SelectListItem {  Value = Ciudades[i] });
-            //}
             ViewData["Cities"] = StatesCitiesModel.GetCiudades("Sonora");
             return View();
         }
@@ -35,28 +29,38 @@ namespace WeatherDashboard.Controllers
             return Json(States, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost]
-        public ActionResult GetCities(string iso3)
+        public JsonResult GetCities(string state)
         {
-            if (!string.IsNullOrWhiteSpace(iso3) && iso3.Length == 3)
+            if (!string.IsNullOrWhiteSpace(state))
             {
-                ViewData["States"] = iso3;
-                ViewData["Cities"] = StatesCitiesModel.GetCiudades(iso3);
-                return Json(StatesCitiesModel.GetCiudades(iso3),JsonRequestBehavior.AllowGet);
+                ViewData["States"] = state;
+                ViewData["Cities"] = StatesCitiesModel.GetCiudades(state);
+                var content = StatesCitiesModel.GetCiudades(state);
+                var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+                var jsonContent = Newtonsoft.Json.JsonConvert.SerializeObject(content);
+                return Json(jsonContent, JsonRequestBehavior.AllowGet);
             }
             return null;
         }
 
         public JsonResult GetWeather(string City, string State, string DateStart,string DateEnd, string Scale)
         {
-            Weather weather = new Weather();
-            return Json(weather.getWeather(City, State, DateStart,DateEnd,Scale),JsonRequestBehavior.AllowGet);
+            if (!string.IsNullOrWhiteSpace(City) && !string.IsNullOrWhiteSpace(State) && !string.IsNullOrWhiteSpace(DateStart) && !string.IsNullOrWhiteSpace(DateEnd) && !string.IsNullOrWhiteSpace(Scale))
+            {
+                Weather weather = new Weather();
+                return Json(weather.getWeather(City, State, DateStart, DateEnd, Scale), JsonRequestBehavior.AllowGet);
+            }
+            return null;
         }
 
         public JsonResult GetWeatherDays(string City, string State, string Days, string Scale)
         {
-            Weather weather = new Weather();
-            return Json(weather.getWeatherDays(City, State, Days, Scale), JsonRequestBehavior.AllowGet);
+            if (!string.IsNullOrWhiteSpace(City) && !string.IsNullOrWhiteSpace(State) && !string.IsNullOrWhiteSpace(Days) && !string.IsNullOrWhiteSpace(Scale))
+            {
+                Weather weather = new Weather();
+                return Json(weather.getWeatherDays(City, State, Days, Scale), JsonRequestBehavior.AllowGet);
+            }
+            return null;
         }
     }
 }

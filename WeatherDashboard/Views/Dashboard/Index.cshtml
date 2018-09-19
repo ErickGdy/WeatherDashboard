@@ -88,30 +88,29 @@
 				maxDate: new Date(),
 				showOn: "focus",
 			}).datepicker("setDate", new Date());
-			$('#cmb_State').attr("disabled", true);
+			//$('#cmb_State').attr("disabled", true);
 			$('.datepicker').attr("disabled", true);
 			$('#cmb_City').val("Ciudad Obregón");
 			searchTemperature();
-			@*//Populate DropDownList failed
-			$('#cmb_Estado').change(function () {
+			//Populate DropDownList failed
+			$('#cmb_State').on('change', function () {
 				var selectedState = $("#cmb_State").val();
 				var citiesSelect = $('#cmb_City');
 				citiesSelect.empty();
 				if (selectedState != null || selectedState != 'Seleccione Estado') {
-					$.ajax({
-						url: '@Url.Action("GetCities","Dashboard")',
-						type: "Post",
-						contentType: "application/json; charset=utf-8",
-						data: "{ iso3:" + JSON.stringify(selectedState) + "}",
-						success: function (result) {
-							$.each(result, function (index, item) {
-								citiesSelect.append($('<option></option>').val(item.toString()).text(item.toString()));
-							});
-						},error: function (result) {
-						}
+					$.get("@Url.Action("GetCities", "Dashboard")",
+					{ state: selectedState },
+					function (respose) {
+						console.log(JSON.parse(respose));
+						$.each(JSON.parse(respose),function(index,item){
+							citiesSelect.append($('<option></option>').val(item).text(item.toString()));
+						});
 					});
 				}
-			});*@
+			});
+			$('#cmb_City').on('change', function () {
+				searchTemperature();
+			});
 
 		});
 		function searchTemperature() {
