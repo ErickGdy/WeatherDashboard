@@ -40,26 +40,27 @@
     </div>
 	<div class="col-md-3">
 		<h3>Search Temperature</h3>
-		<button type="button" class="btn btn-info" onclick="searchTemperature()">
+		<button type="button" class="btn btn-info" onclick="searchTemperatureByPeriod()">
 			<span class="glyphicon glyphicon-search"></span> Search
 		</button>
 	</div>
 </div>
 
 <div class="jumbotron">
-	<h2 id="Label_City">WEATHER APP</h2><br/>
+	<h3 id="Label_City">WEATHER APP</h3>
 	<h2 id="Current_Temp"></h2>
 	<div class="row">
 		<div class="col-md-8">
 			<div id="WeatherChart">
-				<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+				<div id="chartContainer" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<h3>Notes:</h3>
-			<h4>This application search next 15 days temperatures of selected city.</h4>
-			<h4>Show a range of dates temperatures is not possible without a premium API.</h4>
-			<h4>In small cities or towns, information can be unavailable</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<h4>Notes:</h4>
+			<p>In small cities or towns, information can be unavailable</p>
+			<p>if graph doesn't show information, you need to change de API KEY or wait 24 hours</p>
 		</div>
 	</div>
 </div>
@@ -73,13 +74,14 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			//Establece propiedades de datePicker
+			var date = moment();
 			$(".datepickerStart").datepicker({
 				dateFormat: "yy-mm-dd",
 				changeMonth: true,
 				changeYear: true,
 				maxDate: new Date(),
 				showOn: "focus",
-			}).datepicker("setDate", new Date());
+			}).datepicker("setDate", moment().subtract(15, 'days').format("YYYY-MM-DD"));
 
 			$(".datepickerEnd").datepicker({
 				dateFormat: "yy-mm-dd",
@@ -91,7 +93,7 @@
 			//$('#cmb_State').attr("disabled", true);
 			$('.datepicker').attr("disabled", true);
 			$('#cmb_City').val("Ciudad Obregón");
-			searchTemperature();
+			searchTemperatureByPeriod();
 			//Populate DropDownList failed
 			$('#cmb_State').on('change', function () {
 				var selectedState = $("#cmb_State").val();
@@ -109,11 +111,15 @@
 				}
 			});
 			$('#cmb_City').on('change', function () {
-				searchTemperature();
+				searchTemperatureByPeriod();
+			});
+			$('#cmb_Scale').on('change', function () {
+				searchTemperatureByPeriod();
 			});
 
 		});
-		function searchTemperature() {
+
+		function searchTemperatureByPeriod() {
 			var selectedState = $("#cmb_State").children("option").filter(":selected").text();
 			var citySelect = $('#cmb_City').val();
 			var dateStart = $(".datepickerStart").val();
@@ -128,19 +134,19 @@
 				var yMin = [];
 				var xMax = [];
 				var yMax = [];
-				$.get("@Url.Action("GetWeatherDays", "Dashboard")",
-					{ City: citySelect, State: selectedState, Days: 15, Scale: scale },
-					function (respose) {
-						console.log(respose);
-						$("#Label_City").text(citySelect + "  " + respose.data[0].temp + " " +  $("#cmb_Scale").val());
-						$.each(respose.data, function (index, item) {
-							yMin[index] = item.min_temp;
-							xMin[index] = item.datetime;
-							yMax[index] = item.max_temp;
-							xMax[index] = item.datetime;
-						});
-						graphChart(yMin,xMin,yMax,xMax);
-					});
+				$.get("@Url.Action("GetWeatherHistorical", "Dashboard")",
+			{ City: citySelect, State: selectedState, DateStart: dateStart, DateEnd: dateEnd, Scale: scale },
+			function (respose) {
+				console.log(respose);
+				$("#Label_City").text(citySelect + "  " + respose[respose.length - 1].temperature + " " + $("#cmb_Scale").val());
+				$.each(respose, function (index, item) {
+					yMin[index] = parseInt(item.temp_min);
+					xMin[index] = item.date;
+					yMax[index] = parseInt(item.temp_max);
+				});
+				xMax = xMin;
+				graphChart(yMin, xMin, yMax, xMax);
+			});
 			}
 		}
 
@@ -159,18 +165,18 @@
 					},
 					axisY: {
 						title: "Temperatures",
-						titleFontColor: "#C0504E",
-						lineColor: "#C0504E",
-						labelFontColor: "#C0504E",
-						tickColor: "#C0504E",
-						includeZero: true
-					},
-					axisY2: {
-						title: "Temperatures",
 						titleFontColor: "#4F81BC",
 						lineColor: "#4F81BC",
 						labelFontColor: "#4F81BC",
 						tickColor: "#4F81BC",
+						includeZero: true
+					},
+					axisY2: {
+						title: "Temperatures",
+						titleFontColor: "#C0504E",
+						lineColor: "#C0504E",
+						labelFontColor: "#C0504E",
+						tickColor: "#C0504E",
 						includeZero: true
 					},
 					toolTip: {
@@ -183,6 +189,31 @@
 					data: [{
 						type: "spline",
 						name: "Temperature Max",
+						showInLegend: true,
+						xValueFormatString: "DD MMM YYYY",
+						yValueFormatString: "#,##0 °",
+						dataPoints: [
+							{ x: new Date(xMax[0]), y: yMax[0] },
+							{ x: new Date(xMax[1]), y: yMax[1] },
+							{ x: new Date(xMax[2]), y: yMax[2] },
+							{ x: new Date(xMax[3]), y: yMax[3] },
+							{ x: new Date(xMax[4]), y: yMax[4] },
+							{ x: new Date(xMax[5]), y: yMax[5] },
+							{ x: new Date(xMax[6]), y: yMax[6] },
+							{ x: new Date(xMax[7]), y: yMax[7] },
+							{ x: new Date(xMax[8]), y: yMax[8] },
+							{ x: new Date(xMax[9]), y: yMax[9] },
+							{ x: new Date(xMax[10]), y: yMax[10] },
+							{ x: new Date(xMax[11]), y: yMax[11] },
+							{ x: new Date(xMax[12]), y: yMax[12] },
+							{ x: new Date(xMax[13]), y: yMax[13] },
+							{ x: new Date(xMax[14]), y: yMax[14] }
+						]
+					},
+					{
+						type: "spline",
+						name: "Temperature Min",
+						axisYType: "secondary",
 						showInLegend: true,
 						xValueFormatString: "DD MMM YYYY",
 						yValueFormatString: "#,##0 °",
@@ -202,33 +233,6 @@
 							{ x: new Date(xMin[12]), y: yMin[12] },
 							{ x: new Date(xMin[13]), y: yMin[13] },
 							{ x: new Date(xMin[14]), y: yMin[14] }
-
-						]
-					},
-					{
-						type: "spline",
-						name: "Temperature Min",
-						axisYType: "secondary",
-						showInLegend: true,
-						xValueFormatString: "DD MMM YYYY",
-						yValueFormatString: "#,##0 °",
-						dataPoints: [
-							{ x: new Date(xMax[0]),y: yMax[0] },
-							{ x: new Date(xMax[1]), y: yMax[1] },
-							{ x: new Date(xMax[2]), y: yMax[2] },
-							{ x: new Date(xMax[3]), y: yMax[3] },
-							{ x: new Date(xMax[4]), y: yMax[4] },
-							{ x: new Date(xMax[5]), y: yMax[5] },
-							{ x: new Date(xMax[6]), y: yMax[6] },
-							{ x: new Date(xMax[7]), y: yMax[7] },
-							{ x: new Date(xMax[8]), y: yMax[8] },
-							{ x: new Date(xMax[9]), y: yMax[9] },
-							{ x: new Date(xMax[10]), y: yMax[10] },
-							{ x: new Date(xMax[11]), y: yMax[11] },
-							{ x: new Date(xMax[12]), y: yMax[12] },
-							{ x: new Date(xMax[13]), y: yMax[13] },
-							{ x: new Date(xMax[14]), y: yMax[14] }
-
 						]
 					}
 					]
