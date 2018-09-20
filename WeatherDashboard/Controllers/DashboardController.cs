@@ -1,5 +1,9 @@
-﻿using System;
+﻿using Microsoft.Ajax.Utilities;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -43,12 +47,32 @@ namespace WeatherDashboard.Controllers
             return null;
         }
 
-        public JsonResult GetWeather(string City, string State, string DateStart,string DateEnd, string Scale)
+        public JsonResult GetWeatherHistorical(string City, string State, string DateStart,string DateEnd, string Scale)
         {
             if (!string.IsNullOrWhiteSpace(City) && !string.IsNullOrWhiteSpace(State) && !string.IsNullOrWhiteSpace(DateStart) && !string.IsNullOrWhiteSpace(DateEnd) && !string.IsNullOrWhiteSpace(Scale))
             {
                 Weather weather = new Weather();
-                return Json(weather.getWeather(City, State, DateStart, DateEnd, Scale), JsonRequestBehavior.AllowGet);
+                List<WeatherCity> weathers = new List<WeatherCity>();
+                CultureInfo format = CultureInfo.CreateSpecificCulture("ja-JP");
+                DateTime start = DateTime.Parse(DateStart);
+                DateTime end = DateTime.Parse(DateEnd);
+                var days = end.Subtract(start).TotalDays;
+                DateTime date = start;
+                WeatherCity weather_city;
+                for (int i = 0; i < days; i++)
+                {
+                    string aux = weather.getWeather(City, State, date.ToString("d", format).Replace("/", "-"), date.AddDays(1).ToString("d", format).Replace("/", "-"), Scale);
+                    var obj = JObject.Parse(aux);
+                    weather_city = new WeatherCity();
+                    weather_city.date = (string)obj["data"][0]["datetime"];
+                    weather_city.temp_min = (string)obj["data"][0]["min_temp"];
+                    weather_city.temp_max = (string)obj["data"][0]["max_temp"];
+                    weather_city.temperature = (string)obj["data"][0]["temp"];
+                    //JsonConvert.DeserializeObject<WeatherCity>(aux);
+                    weathers.Add(weather_city);
+                    date = date.AddDays(1);
+                }
+                return Json(weathers, JsonRequestBehavior.AllowGet);
             }
             return null;
         }
