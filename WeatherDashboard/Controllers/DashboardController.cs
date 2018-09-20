@@ -70,7 +70,7 @@ namespace WeatherDashboard.Controllers
                     weather_city.temperature = (string)obj["data"][0]["temp"];
                     //JsonConvert.DeserializeObject<WeatherCity>(aux);
                     weathers.Add(weather_city);
-                    date = date.AddDays(1);
+                date = date.AddDays(1);
                 }
                 return Json(weathers, JsonRequestBehavior.AllowGet);
             }

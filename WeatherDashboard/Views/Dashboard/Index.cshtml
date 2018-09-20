@@ -14,7 +14,7 @@
 	</div>
 	<div class="col-sm-3">
 		<h3>Period</h3>
-		<div class='input-group date' ">
+		<div class='input-group date'>
 			<span class="input-group-addon">
 				<span class="glyphicon glyphicon-calendar"></span>
 			</span>
@@ -24,7 +24,7 @@
 			<span class="input-group-addon">
 				<span class="glyphicon glyphicon-calendar"></span>
 			</span>
-			@Html.EditorFor(model => model.DatePickerValue, new { htmlAttributes = new { @class = "datepickerEnd", style = "height:35px;width:100%;" } })
+			@Html.EditorFor(model => model.DatePickerValue2, new { htmlAttributes = new { @class = "datepickerEnd", style = "height:35px;width:100%;" } })
 		</div>
 
 		
@@ -46,9 +46,8 @@
 	</div>
 </div>
 
-<div class="jumbotron">
+<div class="jumbotron" style="padding-bottom:20px; padding-top:20px;">
 	<h3 id="Label_City">WEATHER APP</h3>
-	<h2 id="Current_Temp"></h2>
 	<div class="row">
 		<div class="col-md-8">
 			<div id="WeatherChart">
@@ -56,11 +55,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row" style="padding-top:5px;">
 		<div class="col-md-8">
 			<h4>Notes:</h4>
-			<p>In small cities or towns, information can be unavailable</p>
-			<p>if graph doesn't show information, you need to change de API KEY or wait 24 hours</p>
+			<ul style="list-style:none;">
+				<li>In small cities or towns, information can be unavailable</li>
+				<li>If graph doesn't show information, you need to change de API KEY or wait 24 hours</li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -73,7 +74,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			//Establece propiedades de datePicker
+			//set datePicker properties
 			var date = moment();
 			$(".datepickerStart").datepicker({
 				dateFormat: "yy-mm-dd",
@@ -81,7 +82,7 @@
 				changeYear: true,
 				maxDate: new Date(),
 				showOn: "focus",
-			}).datepicker("setDate", moment().subtract(15, 'days').format("YYYY-MM-DD"));
+			}).datepicker("setDate", moment().subtract(2, 'days').format("YYYY-MM-DD"));
 
 			$(".datepickerEnd").datepicker({
 				dateFormat: "yy-mm-dd",
@@ -90,11 +91,10 @@
 				maxDate: new Date(),
 				showOn: "focus",
 			}).datepicker("setDate", new Date());
-			//$('#cmb_State').attr("disabled", true);
-			$('.datepicker').attr("disabled", true);
+			
 			$('#cmb_City').val("Ciudad Obregón");
 			searchTemperatureByPeriod();
-			//Populate DropDownList failed
+			//Populate DropDownList
 			$('#cmb_State').on('change', function () {
 				var selectedState = $("#cmb_State").val();
 				var citiesSelect = $('#cmb_City');
@@ -130,115 +130,88 @@
 			else
 				scale="I";
 			if (selectedState != "" && citySelect != "" && dateStart != "" && dateEnd != "" && scale != "") {
-				var xMin = [];
-				var yMin = [];
-				var xMax = [];
-				var yMax = [];
-				$.get("@Url.Action("GetWeatherHistorical", "Dashboard")",
-			{ City: citySelect, State: selectedState, DateStart: dateStart, DateEnd: dateEnd, Scale: scale },
-			function (respose) {
-				console.log(respose);
-				$("#Label_City").text(citySelect + "  " + respose[respose.length - 1].temperature + " " + $("#cmb_Scale").val());
-				$.each(respose, function (index, item) {
-					yMin[index] = parseInt(item.temp_min);
-					xMin[index] = item.date;
-					yMax[index] = parseInt(item.temp_max);
+				if (new Date(dateEnd) > new Date(dateStart)) {
+					var temp;
+					$.get("@Url.Action("GetWeatherHistorical", "Dashboard")",
+				{ City: citySelect, State: selectedState, DateStart: dateStart, DateEnd: dateEnd, Scale: scale },
+				function (respose) {
+					console.log(respose);
+					var dataPoints = [];
+					var dataPoints2 = [];
+					var options = {
+						exportEnabled: true,
+						animationEnabled: true,
+						title: {
+							text: "Temperatures Scales"
+						},
+						subtitles: [{
+							text: "Weather"
+						}],
+						axisX: {
+							title: "Dates"
+						},
+						axisY: {
+							title: "Temperatures",
+							titleFontColor: "#4F81BC",
+							lineColor: "#4F81BC",
+							labelFontColor: "#4F81BC",
+							tickColor: "#4F81BC",
+							includeZero: true
+						},
+						axisY2: {
+							title: "Temperatures",
+							titleFontColor: "#C0504E",
+							lineColor: "#C0504E",
+							labelFontColor: "#C0504E",
+							tickColor: "#C0504E",
+							includeZero: true
+						},
+						toolTip: {
+							shared: false
+						},
+						legend: {
+							cursor: "pointer",
+							itemclick: toggleDataSeries
+						},
+						data: [{
+							type: "spline",
+							name: "Temperature Max",
+							showInLegend: true,
+							xValueFormatString: "DD MMM YYYY",
+							yValueFormatString: "#,##0 °",
+							dataPoints: dataPoints
+						},
+						{
+							type: "spline",
+							name: "Temperature Min",
+							axisYType: "secondary",
+							showInLegend: true,
+							xValueFormatString: "DD MMM YYYY",
+							yValueFormatString: "#,##0 °",
+							dataPoints: dataPoints2
+						}
+						]
+					};
+					temp = respose[respose.length - 1].temperature;
+					$("#Label_City").text(citySelect + "  " + temp + " " + $("#cmb_Scale").val());
+					$.each(respose, function (index, item) {
+						dataPoints.push({
+							x: new Date(item.date),
+							y: parseInt(item.temp_min)
+						});
+						dataPoints2.push({
+							x: new Date(item.date),
+							y: parseInt(item.temp_max)
+						});
+					});
+					$("#chartContainer").CanvasJSChart(options);
 				});
-				xMax = xMin;
-				graphChart(yMin, xMin, yMax, xMax);
-			});
+				} else {
+					alert("Select a date range valid");
+				}
 			}
 		}
 
-		function graphChart(yMin, xMin, yMax, xMax) {
-				var options = {
-					exportEnabled: true,
-					animationEnabled: true,
-					title: {
-						text: "Temperatures Scales"
-					},
-					subtitles: [{
-						text: "Weather"
-					}],
-					axisX: {
-						title: "Dates"
-					},
-					axisY: {
-						title: "Temperatures",
-						titleFontColor: "#4F81BC",
-						lineColor: "#4F81BC",
-						labelFontColor: "#4F81BC",
-						tickColor: "#4F81BC",
-						includeZero: true
-					},
-					axisY2: {
-						title: "Temperatures",
-						titleFontColor: "#C0504E",
-						lineColor: "#C0504E",
-						labelFontColor: "#C0504E",
-						tickColor: "#C0504E",
-						includeZero: true
-					},
-					toolTip: {
-						shared: false
-					},
-					legend: {
-						cursor: "pointer",
-						itemclick: toggleDataSeries
-					},
-					data: [{
-						type: "spline",
-						name: "Temperature Max",
-						showInLegend: true,
-						xValueFormatString: "DD MMM YYYY",
-						yValueFormatString: "#,##0 °",
-						dataPoints: [
-							{ x: new Date(xMax[0]), y: yMax[0] },
-							{ x: new Date(xMax[1]), y: yMax[1] },
-							{ x: new Date(xMax[2]), y: yMax[2] },
-							{ x: new Date(xMax[3]), y: yMax[3] },
-							{ x: new Date(xMax[4]), y: yMax[4] },
-							{ x: new Date(xMax[5]), y: yMax[5] },
-							{ x: new Date(xMax[6]), y: yMax[6] },
-							{ x: new Date(xMax[7]), y: yMax[7] },
-							{ x: new Date(xMax[8]), y: yMax[8] },
-							{ x: new Date(xMax[9]), y: yMax[9] },
-							{ x: new Date(xMax[10]), y: yMax[10] },
-							{ x: new Date(xMax[11]), y: yMax[11] },
-							{ x: new Date(xMax[12]), y: yMax[12] },
-							{ x: new Date(xMax[13]), y: yMax[13] },
-							{ x: new Date(xMax[14]), y: yMax[14] }
-						]
-					},
-					{
-						type: "spline",
-						name: "Temperature Min",
-						axisYType: "secondary",
-						showInLegend: true,
-						xValueFormatString: "DD MMM YYYY",
-						yValueFormatString: "#,##0 °",
-						dataPoints: [
-							{ x: new Date(xMin[0]),y: yMin[0] },
-							{ x: new Date(xMin[1]), y: yMin[1] },
-							{ x: new Date(xMin[2]), y: yMin[2] },
-							{ x: new Date(xMin[3]), y: yMin[3] },
-							{ x: new Date(xMin[4]), y: yMin[4] },
-							{ x: new Date(xMin[5]), y: yMin[5] },
-							{ x: new Date(xMin[6]), y: yMin[6] },
-							{ x: new Date(xMin[7]), y: yMin[7] },
-							{ x: new Date(xMin[8]), y: yMin[8] },
-							{ x: new Date(xMin[9]), y: yMin[9] },
-							{ x: new Date(xMin[10]), y: yMin[10] },
-							{ x: new Date(xMin[11]), y: yMin[11] },
-							{ x: new Date(xMin[12]), y: yMin[12] },
-							{ x: new Date(xMin[13]), y: yMin[13] },
-							{ x: new Date(xMin[14]), y: yMin[14] }
-						]
-					}
-					]
-				};
-				$("#chartContainer").CanvasJSChart(options);
-			}
 
 			function toggleDataSeries(e) {
 				if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
